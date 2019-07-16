@@ -407,6 +407,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
+      .then(response => this.disabled = true)
       .catch(error => console.error('Error!', error.message))
   })
 </script>
