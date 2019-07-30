@@ -119,10 +119,16 @@ div {
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <center>
+
 <h3>Sign up for 2048 Cupcakes New Release Newsletter</h3>
 <h5>* = Required</h5>
+<div style="display:none; " id="thanks">
+<h3>Thanks for signing up!</h3>
+<br>
+<h3>You will get a email the next time we send out a email</h3>
+  </div>
 </center>
-<div>
+<div id="form">
   <form name="submit-to-google-sheet">
     <label for="Name">First Name *</label>
     <input type="text" id="Name" name="Name" placeholder="Your First Name" required>
@@ -396,7 +402,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <label for="Accepted Terms">By submitting, you accept these&nbsp;<term id="myBtn"><center>Terms</center></term> </label>
   
   
-    <input type="submit" value="Submit" >
+    <input type="submit" value="Submit" onclick="hidediv()">
   </form>
 </div>
 <script>
@@ -423,6 +429,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
 </div>
+  
+  <script>
+function hidediv() {
+  var x = document.getElementById("form");
+    x.style.display = "none";
+  var y = document.getElementById("thanks");
+    y.style.display = "block";
+}
+</script>
 
 <script>
 var modal = document.getElementById("myModal");
