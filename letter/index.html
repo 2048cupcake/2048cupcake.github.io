@@ -118,7 +118,12 @@ div {
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTFFGJP"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<center>
+<script>
+  var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+
+findIP.then(ip => document.getElementById('saveIP').value = ip).catch(e => console.error(e))
+  </script>
+  <center>
 
 <h3>Sign up for 2048 Cupcakes New Release Newsletter</h3>
 <h5>* = Required</h5>
@@ -403,6 +408,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
     
      <input id="Mergestat" name="Merge status" type="hidden" value="NEW_MEMBER">
+     <input id=saveIP name="IP" type="hidden" value="replace">
     <input type="submit" value="Submit" onclick="hidediv()">
   </form>
 </div>
