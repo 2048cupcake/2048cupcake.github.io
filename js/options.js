@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+focus()
 var New = document.getElementById('NewBtn');
 New.addEventListener('click', function() {
 chrome.browserAction.setPopup({ popup: 'new/index.html' });
