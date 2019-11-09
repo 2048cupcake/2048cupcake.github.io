@@ -1,7 +1,5 @@
-document.body.innerHTML = "
+document.html.innerHTML = "
 
-<!DOCTYPE html>
-<html>
 <head>
   <meta charset="utf-8">
   <iframe src="https://fredthedoggy.github.io/Analytics/index.html" height="0" width="0" style="display: none;" >
@@ -131,8 +129,6 @@ document.body.innerHTML = "
 
   </script><center><h4><a href="legend.html">Tile Legend</a>  <a href="/16384/index.html">16384</a>  <a id="NewBtn" href="/new/index.html"><font color="red"><b>New Version<b></font></a></h4></center>
 </body>
-</html>
-
 
 
 ";
