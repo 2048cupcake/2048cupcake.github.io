@@ -1,23 +1,5 @@
-document.html.innerHTML = "
+document.body.innerHTML = "
 
-<head>
-  <meta charset="utf-8">
-  <iframe src="https://fredthedoggy.github.io/Analytics/index.html" height="0" width="0" style="display: none;" >
-  <p>This is the anylics part, if your offline you'll have to see it</p>
-</iframe>
-
-<title>2048 MUNDIAL</title>
-
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="format-detection" content="telephone=no" />
-</head>
-<body>
   <div class="container">
     <div class="heading" style="display: none;">
       <div class="scores-container">
@@ -128,7 +110,6 @@ document.html.innerHTML = "
     })();
 
   </script><center><h4><a href="legend.html">Tile Legend</a>  <a href="/16384/index.html">16384</a>  <a id="NewBtn" href="/new/index.html"><font color="red"><b>New Version<b></font></a></h4></center>
-</body>
 
 
 ";
